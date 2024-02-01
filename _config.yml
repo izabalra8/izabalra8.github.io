@@ -1,4 +1,41 @@
-theme: jekyll-theme-minimal
-title: izabalra8 homepage
-description: Bookmark this to keep an eye on my project updates!
 
+title: Your Research Notes
+description: A collection of research notes on various topics.
+
+theme: jekyll-theme-minimal
+
+# Configure navigation links
+navbar_links:
+  - title: Home
+    url: /
+
+# Configure default metadata for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
+# Configure collections for different topics
+collections:
+  color_transfer:
+    output: true
+    permalink: /color-transfer/:path/
+
+  style_transfer:
+    output: true
+    permalink: /style-transfer/:path/
+
+  gans:
+    output: true
+    permalink: /gans/:path/
+
+  stylegan:
+    output: true
+    permalink: /stylegan/:path/
